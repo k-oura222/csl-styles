@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
   <info>
-    <title>Journal of Hand Surgery- modified - Keiichiro Oura</title>
-    <title-short>JHS-modified</title-short>
+    <title>Japanese Society for Surgery of the Hand</title>
+    <title-short>JSSH</title-short>
     <id>https://csl.mendeley.com/styles/15853463/JSSH</id>
     <link href="http://www.zotero.org/styles/american-medical-association" rel="self"/>
     <link href="http://westlibrary.txwes.edu/sites/default/files/pdf/ama_citation_style.pdf" rel="documentation"/>
@@ -17,10 +17,6 @@
     <contributor>
       <name>Christian Pietsch</name>
       <uri>http://purl.org/net/pietsch</uri>
-    </contributor>
-    <contributor>
-      <name>Keiichiro Oura</name>
-      <uri/>
     </contributor>
     <category citation-format="numeric"/>
     <category field="medicine"/>
@@ -82,7 +78,7 @@
   <macro name="title">
     <choose>
       <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
-        <text variable="title" font-style="italic" text-case="title"/>
+        <text variable="title" text-case="title"/>
       </if>
       <else>
         <text variable="title"/>
@@ -155,7 +151,7 @@
           </group>
         </else-if>
         <else-if type="article-newspaper">
-          <text variable="container-title" font-style="italic" prefix=" " suffix=". "/>
+          <text variable="container-title" form="short" prefix=" " suffix=". "/>
           <choose>
             <if variable="URL">
               <group delimiter=". " suffix=".">
@@ -210,7 +206,7 @@
         <else>
           <text macro="editor" prefix=" " suffix="."/>
           <group prefix=" " suffix=".">
-            <text variable="container-title" form="short" strip-periods="true" font-style="italic" suffix=". "/>
+            <text variable="container-title" form="short" strip-periods="true" suffix=". "/>
             <group delimiter=";" suffix=": ">
               <group>
                 <text variable="volume"/>
